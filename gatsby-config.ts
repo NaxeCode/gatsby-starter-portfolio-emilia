@@ -8,21 +8,35 @@ const config: GatsbyConfig = {
     // You can overwrite values here that are used for the SEO component
     // You can also add new values here to query them like usual
     // See all options: https://github.com/LekoArts/gatsby-themes/blob/main/themes/gatsby-theme-emilia-core/gatsby-config.mjs
-    siteTitle: `Emilia`,
-    siteTitleAlt: `Emilia - Gatsby Starter Portfolio`,
-    siteHeadline: `Emilia - Gatsby Theme from @lekoarts`,
+    siteTitle: `Sirajaldeen Ali`,
+    siteTitleAlt: `Sirajaldeen Ali - Portfolio`,
+    siteHeadline: `Sirajaldeen Ali - Powered By Gatsby`,
     siteUrl: `https://emilia.lekoarts.de`,
     siteDescription: `Minimalistic portfolio/photography site with masonry grid, page transitions and big images. Themeable with Theme UI. Includes Light/Dark mode.`,
     siteImage: `/banner.jpg`,
     siteLanguage: `en`,
-    author: `@lekoarts_de`,
+    author: `@NaxeCode`,
   },
   trailingSlash: `never`,
   plugins: [
     {
       resolve: `@lekoarts/gatsby-theme-emilia`,
       // See the theme's README for all available options
-      options: {},
+      options: {
+        name: `NaxeCode`,
+        location: `Portland, Oregon - USA`,
+        showThemeAuthor: false,
+        socialMedia: [
+          {
+            title: `Twitter`,
+            href: `https://www.twitter.com/NaxeCode`
+          },
+          {
+            title: `Homepage`,
+            href: `https://www.lekoarts.de`
+          }
+        ]
+      },
     },
     {
       resolve: `gatsby-plugin-sitemap`,
